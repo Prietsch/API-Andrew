@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Dashboard de APIs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Integração de APIs</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Consulta CEP (Interativo)</a>
+        <a href="page2.html">Dashboard (3 APIs)</a>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+            
+            <article class="api-card">
+                <h3>1. Momento Pet</h3>
+                <span class="api-badge">API: Dog CEO</span>
+                
+                <div id="dogContent" class="api-content">
+                    <p class="loading">Carregando imagem...</p>
+                </div>
+                <p><small>Exibe uma foto aleatória de cachorro.</small></p>
+            </article>
+
+            <article class="api-card">
+                <h3>2. Siglas de Moedas</h3>
+                <span class="api-badge">API: AwesomeAPI</span>
+                
+                <div id="moedasContent" class="api-content">
+                    <p class="loading">Carregando moedas...</p>
+                </div>
+                <p><small>Lista as moedas globais aceitas.</small></p>
+            </article>
+
+            <article class="api-card">
+                <h3>3. Feriados Nacionais</h3>
+                <span class="api-badge">API: BrasilAPI</span>
+                
+                <div id="feriadosContent" class="api-content">
+                    <p class="loading">Buscando feriados...</p>
+                </div>
+                <p><small>Lista os feriados nacionais do ano corrente.</small></p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Trabalho de Web - 2025</p>
+    </footer>
+
+</body>
+</html>

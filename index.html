@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Integração de APIs</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Consulta CEP (Interativo)</a>
+        <a href="page2.html">Dashboard (3 APIs)</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Consultar Endereço</h2>
+            
+            <span class="api-badge">API Utilizada: <strong>ViaCEP</strong></span>
+
+            <p>Digite o CEP (com ou sem traço) para buscar o endereço.</p>
+            
+            <label for="cepInput" style="display:none;">CEP</label>
+            <input type="text" id="cepInput" placeholder="Ex: 01001-000 ou 01001000" maxlength="9">
+            
+            <button onclick="buscarCEP()">Buscar Endereço</button>
+            
+            <p id="msgErro" class="error"></p>
+
+            <div id="resultado">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Trabalho de Web - 2025</p>
+    </footer>
+
+</body>
+</html>
